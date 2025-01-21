@@ -10,7 +10,16 @@ To compile this project, make sure you have correctly installed the following to
 - [Vulkan SDK](https://vulkan.lunarg.com/)
 - [CMake](https://cmake.org/download/)
 
-Then run the build.bat script. The Visual Studio solution is created in the ``_build`` folder.
+Rename the ``build_vs.txt`` file to ``build_vs.bat`` and double-click on this file to run the script.
+The Visual Studio solution is created in the ``_build_vs`` folder.
+
+If you wish to compile the project manually, you can run the following commands:
+```
+mkdir _build_vs
+cd _build_vs
+cmake .. -G "Visual Studio 17 2022" -A x64
+cmake --build . --config Release
+```
 
 ## Licence
 
